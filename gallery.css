@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .photo {
+    margin: 10px;
+    max-width: 300px;
+    border: 1px solid #1d1d39;
+    background-color: #1d1d39;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .photo:hover {
+    transform: scale(1.05);
+  }
+  
+  .photo img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .likes {
+    margin: 10px;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .likes button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px;
+    color: #262626;
+  }
+  
+  .likes button:focus {
+    outline: none;
+  }
+  
+  .likes button svg {
+    fill: #262626;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .likes button.liked svg {
+    fill: #ed4956;
+  }
+  
+  .comments {
+    margin: 10px;
+  }
+  
+  .comments input, .comments button {
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .comments button {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .comments button:hover {
+    background-color: #2668b1;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
